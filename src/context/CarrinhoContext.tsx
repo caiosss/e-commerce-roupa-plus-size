@@ -43,7 +43,7 @@ export function CarrinhoProvider(props: any) {
 
   function valorTotal() {
     return itens.reduce((total: number, item: ItemCarrinho) => {
-      return total + ((item.quantidade * item.produto.preco));
+      return (total + ((item.quantidade * item.produto.preco)));
     }, 0);
   }
 

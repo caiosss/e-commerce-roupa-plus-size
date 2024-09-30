@@ -21,15 +21,12 @@ export default function Menu({ onSearch }: MenuProps) {
             flex justify-around items-center
         "
       >
-        <Link href={"#"}>
           <Image
             src={"https://img.icons8.com/ios-glyphs/30/menu--v3.png"}
             width={50}
             height={50}
             alt="menu"
           />
-        </Link>
-
         <div>
           <h1
             className="
@@ -49,7 +46,7 @@ export default function Menu({ onSearch }: MenuProps) {
           value={searchQuery}
           onChange={permanecerParametroBusca}
         />
-        <Link href={"#"} className="font-semibold p-2 bg-purple-500 rounded-lg">Entrar</Link>
+        <Link href={"/formulario/formulario"} className="font-semibold p-2 bg-purple-500 rounded-lg">Entrar</Link>
         
       </header>
     );
